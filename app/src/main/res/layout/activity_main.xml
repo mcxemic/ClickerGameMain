@@ -56,28 +56,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b_click" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="129dp"
-        android:layout_height="wrap_content"
-        android:text="GAME"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="121dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HIGHSCORE"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="0dp" />
+        >
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:text="ABOUT"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="0dp" />
+        <Button
+            android:id="@+id/b_main_game"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="GAME"
+            android:onClick="b_main_game_click"/>
+
+
+        <Button
+            android:id="@+id/b_main_score"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIGHSCORE"
+            android:onClick="b_main_score_click"/>
+
+        <Button
+            android:id="@+id/b_main_about"
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:onClick="b_main_about_click"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+
 
 </android.support.constraint.ConstraintLayout>

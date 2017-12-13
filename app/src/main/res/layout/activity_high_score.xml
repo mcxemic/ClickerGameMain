@@ -5,29 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mcxemic.myapplication1.HighScore_Activity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
     <Button
-        android:id="@+id/button4"
-        android:layout_width="135dp"
+        android:id="@+id/score_game_b"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="GAME"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:onClick="b_score_game_click"/>
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="121dp"
+        android:id="@+id/score_score_b"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HIGHSCORE"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:onClick="b_score_score_click"/>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:text="ABOUT"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="0dp" />
+        <Button
+            android:id="@+id/score_about_b"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:onClick="b_score_about_click"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="247dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="132dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
